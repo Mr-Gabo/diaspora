@@ -1,0 +1,191 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quattrocento', serif;
+  background-color: white;
+}
+
+h2 {
+  font-family: 'Quattrocento Sans', sans-serif;
+
+}
+
+p {
+  font-size: 20px;
+  counter-reset: black;
+}
+
+.artist {
+ margin-top: 50px;
+ margin-bottom: 50px;
+}
+
+.bio p {
+  width: 300px;
+
+}
+
+.intro {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.intro h1 {
+  padding-bottom: 20px;
+}
+
+.card {
+  margin: 10px 10px;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.logo img {
+ margin-top: 100px;
+ height: 100px;
+ width: auto;
+}
+
+
+body{min-height:200vh;}
+
+
+.navbar-default{
+  transition:500ms ease;
+  background: white;
+}
+.navbar-default.scrolled{
+  background:#f4f1eb;
+}
+
+.navbar {
+  height: 200px;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;  
+  padding-top: 20px;
+}
+
+.navbar-brand img {
+ height: 100px;
+ width: auto;
+}
+
+.nav-link {
+ 
+  padding-left: 20px !important;
+}
+
+.contactartist {
+  position: absolute;
+  bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contactartist a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*masonry*/
+
+section {
+  column-width: 350px;
+}
+
+section img {
+  width: 100%;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.artistimg {
+  float: right;
+}
+
+.imgzoom {
+  transition: transform 250ms;
+}
+
+.imgzoom:hover {
+  transform: scale(1.02, 1.02);
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 75px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #bb20255f; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #bb2025; /* Add a dark-grey background on hover */
+}
+
+.thankyou {
+ margin-top: 40px;
+  width: 500px;
+  background-color: white;
+  border: solid 3px #343440;
+  text-align: center;
+}
+
+.homeft {
+  background-color: #f4f1eb;
+}
+
+
+
+.ftnav {
+  text-align: right;
+  padding-top: 10px;
+  line-height: 10px;
+}
+
+.ftnav p {
+  font-size: 16px;
+}
+
+.ftnav a {
+  color: #343440;
+}
+
+.ftnav a:hover {
+ color: #bb2025;
+ text-decoration: none;
+}
+
+@media (max-width: 767.98px) { 
+
+.contactartist {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.artistimg {
+ float:left;
+ padding-bottom: 20px;
+}
+
+}
