@@ -9,6 +9,7 @@ body {
 
 h1 {
   font-family: 'Quattrocento', serif;
+  
 }
 
 h2 {
@@ -40,8 +41,23 @@ p {
 }
 
 .bio p {
-  width: 300px;
+  width: 350px;
+}
 
+.intro1 {
+  background-image: url(/images/hero.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center;
+  padding-top:100px;
+  padding-bottom:100px;
+  
+}
+
+.jumbotron {
+  background-color: #f4f1eb;
+  height: 300px;
+  margin-bottom: 0px;
 }
 
 .intro {
@@ -62,23 +78,15 @@ input[type='checkbox'] {
   display: none;
 }
 
-.intro {
- margin-top: 75px;
-}
-
 
 body{min-height:200vh;}
-
-
-
-
 
 .navbar {
   height: auto;
   font-size: 16px;
   color: #343440;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 0px;
 }
 
 
@@ -155,8 +163,8 @@ section img {
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 75px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  bottom: 100px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -185,6 +193,7 @@ section img {
 
 .homeft {
   background-color: #343440;
+  padding-top: 20px;
 }
 
 .tile img{
@@ -292,4 +301,123 @@ section img {
     width: 100%;
    }
 
+   .homeft {
+    flex-direction: column;
+   }
+   
+   .ftnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
   }
+
+  
+
+  .tilecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+   }
+ 
+  .tile img{
+    width:50px;
+    height: 50px;
+    
+  }
+
+  #myBtn {
+    bottom: 150px;
+  }
+
+  .jumbotron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .intro1 h6 {
+    font-size: 28px;
+  }
+
+  .intro1 {
+    background-image: url(/images/hero.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    padding-top:100px;
+    padding-bottom:100px;
+    
+  }
+
+}
+
+.anim-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.anim-text img {
+  width: 100%;
+  margin: auto;
+  display: block;
+
+}
+
+h6 {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  font-family: 'Quattrocento', serif;
+  font-weight:300;
+  font-size:38px;
+}
+  
+  h6:first-of-type { 
+    width: 220px;
+    animation: showup 7s ;
+    
+  }
+  
+  h6:last-of-type {
+    width:0px;
+    animation: reveal 7s ;
+    animation-fill-mode: forwards;
+  }
+  
+  h6:last-of-type span {
+    margin-left:0px;
+    animation: slidein 7s ;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:400px;}
+      80% {opacity:1;}
+      100% {opacity:1;width:400px;}
+      
+  }
+
+
