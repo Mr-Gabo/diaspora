@@ -3,13 +3,12 @@ html {
 }
 
 body {
-  font-family: 'Quattrocento Sans', sans-serif;
-  background-color: #f4f1eb;
+  font-family: 'Quattrocento', serif;
+  background-color: white;
 }
 
 h2 {
- font-family: 'Quattrocento Sans', sans-serif;
- font-weight: bold;
+  font-family: 'Quattrocento Sans', sans-serif;
 
 }
 
@@ -19,7 +18,7 @@ p {
 }
 
 .artist {
- margin-top: 30px;
+ margin-top: 50px;
  margin-bottom: 50px;
 }
 
@@ -41,7 +40,7 @@ p {
 }
 
 .intro {
-  padding-top: 0px;
+  padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -66,7 +65,13 @@ input[type='checkbox'] {
 body{min-height:200vh;}
 
 
-
+.navbar-default{
+  transition:500ms ease;
+  background: white;
+}
+.navbar-default.scrolled{
+  background:#f4f1ebec;
+}
 
 
 .navbar {
@@ -112,15 +117,7 @@ body{min-height:200vh;}
 
 .contactartist a {
   font-weight: bold;
-}
-
-.contactartist a:hover {
   text-decoration: underline;
-  color:#bb2025;
-}
-
-.desc {
-  padding-left: 15px;
 }
 
 /*masonry*/
@@ -180,13 +177,10 @@ section img {
 
 
 .homeft {
-  background-color: #343440;
+  background-color: #f4f1eb;
 }
 
-.tile img{
-  width:75px;
-  height: auto;
-}
+
 
 .ftnav {
   text-align: right;
@@ -199,7 +193,7 @@ section img {
 }
 
 .ftnav a {
-  color: #f4f1eb;
+  color: #343440;
 }
 
 .ftnav a:hover {
