@@ -120,10 +120,14 @@ body{min-height:200vh;}
   bottom: 0;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: -15px;
+
 }
 
 .contactartist a {
+  font-size: 22px;
   font-weight: bold;
+  
 }
 
 .contactartist a:hover {
@@ -262,6 +266,35 @@ section img {
 #ignismyModal .modal-header{
     border:0px;
 }
+
+.readmorebio a {
+  font-weight: bold;
+  color: #343440;
+}
+
+.readmorebio a:hover {
+  color: #bb2025;
+  text-decoration: underline;
+}
+
+.moises {
+  width:400px;
+}
+
+.moises img {
+  width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.social img {
+  width: 75px;
+  height: auto;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
 /*Media query - mobile*/
 
 @media (max-width: 767.98px) { 
@@ -358,7 +391,9 @@ section img {
     
   }
 
-
+  .readmorebio {
+    margin-left: 50px;
+  }
 
 }
 
