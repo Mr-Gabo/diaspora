@@ -338,12 +338,15 @@ section img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 425px;
+    padding-left: 20px;
   }
 
   .intro1 h6 {
-    font-size: 28px;
+    font-size: 24px;
   }
+
+  
 
   .intro1 {
     background-image: url(/images/hero.png);
@@ -354,6 +357,8 @@ section img {
     padding-bottom:100px;
     
   }
+
+
 
 }
 
@@ -384,19 +389,19 @@ h6 {
   
   h6:first-of-type { 
     width: 220px;
-    animation: showup 7s ;
+    animation: showup 10s ;
     
   }
   
   h6:last-of-type {
     width:0px;
-    animation: reveal 7s ;
+    animation: reveal 14s ;
     animation-fill-mode: forwards;
   }
   
   h6:last-of-type span {
     margin-left:0px;
-    animation: slidein 7s ;
+    animation: slidein 14s ;
   }
   
   @keyframes showup {
