@@ -297,7 +297,7 @@ section img {
 
 /*Media query - mobile*/
 
-@media (max-width: 767.98px) { 
+@media (max-width: 992px) { 
 
   .contactartist {
     position: relative;
@@ -367,29 +367,13 @@ section img {
     bottom: 150px;
   }
 
-  .jumbotron {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 425px;
-    padding-left: 20px;
-  }
+ 
 
-  .intro1 h6 {
-    font-size: 24px;
-  }
+ .jumbotron .intro1 h6{
+  animation: none;
+ }
 
-  
 
-  .intro1 {
-    background-image: url(../images/hero.png);
-    background-repeat: no-repeat;
-    text-align: center;
-    background-position: center;
-    padding-top:100px;
-    padding-bottom:100px;
-    
-  }
 
   .readmorebio {
     margin-left: 50px;
